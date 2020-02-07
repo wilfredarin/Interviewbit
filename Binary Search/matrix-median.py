@@ -1,4 +1,8 @@
-def findMedian(self, A):
+from bisect import bisect_right as upper_bound
+class Solution:
+    # @param A : list of list of integers
+    # @return an integer
+    def findMedian(self, A):
         n = len(A)
         m = len(A[0])
         mi = 0
