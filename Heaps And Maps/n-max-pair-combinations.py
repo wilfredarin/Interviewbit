@@ -24,7 +24,7 @@ class Solution:
     # @return a list of integers
     def solve(self, A, B):
         n = len(A)
-        A.sort(reverse=True)
+        A.sort(reverse=Trues
         B.sort(reverse=True)
         result = []
         visited = set()
