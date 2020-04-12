@@ -18,6 +18,7 @@ class Solution:
                     if j<n:#if j not the last element(to avoid out of bound in A[j:])
                         if A[i:j] in B and A[j:] in store:
                             store[A[i:]]=1
+                            break
                     elif j==n:
                         store[A[i:]]=1
         if A in store:
