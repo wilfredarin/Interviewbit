@@ -9,8 +9,8 @@ class Solution:
             l = helpSum(A.left,ans)
             r  =helpSum(A.right,ans)
             max_single = max(l,r)+A.val
-            ans = max(ans,max_single,A.val,l+r+A.val)
+            ans[0] = max(ans[0],max_single,A.val,l+r+A.val)
             return max_single
-        ans = float("-inf")
+        ans = [float("-inf")]
         helpSum(A,ans)
-        return ans
+        return ans[0]
